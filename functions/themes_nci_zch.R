@@ -48,7 +48,7 @@ theme_zch <- function(base_size = 12, base_family = "sans") {
 
       # Títulos
       plot.title = element_text(
-        color = pal_zch["azul_institucional"],
+        color = "black",
         face = "bold",
         size = rel(1.35),
         margin = margin(b = 8)
