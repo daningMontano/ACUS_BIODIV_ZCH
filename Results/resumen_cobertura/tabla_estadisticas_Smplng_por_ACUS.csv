@@ -1,0 +1,21 @@
+Nombre,Grupo,n_celdas,promedio,mediana,sd,CV,minimo,maximo
+Bracamoros,Anfibios,37,0.712,0.714,0.086,12.138,0.394,0.893
+Bracamoros,Aves,148,0.695,0.806,0.277,39.811,0.006,0.969
+Bracamoros,Mamíferos,26,0.398,0.351,0.195,48.86,0.089,0.914
+Bracamoros,Plantas,193,0.358,0.274,0.232,64.907,0.009,0.7
+Bracamoros,Reptiles,25,0.609,0.622,0.058,9.535,0.446,0.676
+Cordillera del Condor,Anfibios,109,0.698,0.76,0.195,27.878,0.087,0.91
+Cordillera del Condor,Aves,142,0.813,0.869,0.168,20.658,0.176,0.969
+Cordillera del Condor,Mamíferos,32,0.462,0.395,0.281,60.925,0.049,0.914
+Cordillera del Condor,Plantas,283,0.42,0.446,0.182,43.392,0.004,0.655
+Cordillera del Condor,Reptiles,68,0.688,0.721,0.104,15.063,0.308,0.791
+Fuentes de agua,Anfibios,21,0.668,0.698,0.15,22.539,0.412,0.91
+Fuentes de agua,Aves,82,0.818,0.865,0.155,18.961,0.216,0.971
+Fuentes de agua,Mamíferos,5,0.089,0.089,NA,NA,0.089,0.089
+Fuentes de agua,Plantas,116,0.285,0.247,0.164,57.514,0.002,0.591
+Fuentes de agua,Reptiles,16,0.444,0.491,0.231,51.967,0.111,0.728
+Yawi Sumak,Anfibios,34,0.684,0.649,0.138,20.117,0.465,0.875
+Yawi Sumak,Aves,119,0.82,0.893,0.191,23.286,0.039,0.971
+Yawi Sumak,Mamíferos,32,0.573,0.594,0.243,42.339,0.172,1
+Yawi Sumak,Plantas,226,0.422,0.404,0.224,52.957,0.006,0.758
+Yawi Sumak,Reptiles,30,0.664,0.73,0.217,32.657,0.115,0.946
