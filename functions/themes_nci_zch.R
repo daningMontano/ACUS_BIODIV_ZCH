@@ -24,7 +24,7 @@ pal_zch_cat <- c(
   "#44B749", # verde territorial
   "#CADB2D", # verde lima
   "#FFD503", # amarillo
-  "#3A5562"  # azul gris técnico
+  "#3A5562" # azul gris técnico
 )
 
 # -----------------------------
@@ -34,15 +34,15 @@ theme_zch <- function(base_size = 12, base_family = "sans") {
   theme_minimal(base_size = base_size, base_family = base_family) +
     theme(
       # Fondo
-      plot.background   = element_rect(fill = pal_zch["blanco"], color = NA),
-      panel.background  = element_rect(fill = pal_zch["blanco"], color = NA),
-      panel.border      = element_blank(),
+      plot.background = element_rect(fill = pal_zch["blanco"], color = NA),
+      panel.background = element_rect(fill = pal_zch["blanco"], color = NA),
+      panel.border = element_blank(),
 
       # Grillas
       panel.grid.major.x = element_blank(),
-      panel.grid.minor   = element_blank(),
+      panel.grid.minor = element_blank(),
       panel.grid.major.y = element_line(
-        color = alpha(pal_zch["azul_gris_tecnico"], 0.18),
+        color = scales::alpha(pal_zch["azul_gris_tecnico"], 0.18),
         linewidth = 0.35
       ),
 
@@ -59,7 +59,7 @@ theme_zch <- function(base_size = 12, base_family = "sans") {
         margin = margin(b = 10)
       ),
       plot.caption = element_text(
-        color = alpha(pal_zch["azul_gris_tecnico"], 0.85),
+        color = scales::alpha(pal_zch["azul_gris_tecnico"], 0.85),
         size = rel(0.85),
         hjust = 1
       ),
@@ -95,7 +95,7 @@ theme_zch <- function(base_size = 12, base_family = "sans") {
 
       # Facetas
       strip.background = element_rect(
-        fill = alpha(pal_zch["azul_institucional"], 0.10),
+        fill = scales::alpha(pal_zch["azul_institucional"], 0.10),
         color = NA
       ),
       strip.text = element_text(
@@ -168,8 +168,7 @@ scale_fill_zch_biodiv <- function(...) {
 scale_fill_zch_single <- function(accent = c("azul", "verde", "lima", "amarillo", "gris"), ...) {
   accent <- match.arg(accent)
 
-  color_sel <- switch(
-    accent,
+  color_sel <- switch(accent,
     azul     = pal_zch["azul_institucional"],
     verde    = pal_zch["verde_territorial"],
     lima     = pal_zch["verde_lima"],
@@ -186,9 +185,8 @@ scale_fill_zch_single <- function(accent = c("azul", "verde", "lima", "amarillo"
 theme_map_zch <- function(base_size = 12, base_family = "sans") {
   theme_void(base_size = base_size, base_family = base_family) +
     theme(
-      plot.background  = element_rect(fill = pal_zch["blanco"], color = NA),
+      plot.background = element_rect(fill = pal_zch["blanco"], color = NA),
       panel.background = element_rect(fill = pal_zch["blanco"], color = NA),
-
       plot.title = element_text(
         color = pal_zch["azul_institucional"],
         face = "bold",
@@ -203,11 +201,10 @@ theme_map_zch <- function(base_size = 12, base_family = "sans") {
         margin = margin(b = 10)
       ),
       plot.caption = element_text(
-        color = alpha(pal_zch["azul_gris_tecnico"], 0.85),
+        color = scales::alpha(pal_zch["azul_gris_tecnico"], 0.85),
         size = rel(0.85),
         hjust = 1
       ),
-
       legend.position = "right",
       legend.title = element_text(
         color = pal_zch["azul_gris_tecnico"],
@@ -217,7 +214,6 @@ theme_map_zch <- function(base_size = 12, base_family = "sans") {
         color = pal_zch["azul_gris_tecnico"]
       ),
       legend.key = element_rect(fill = "transparent", color = NA),
-
       plot.margin = margin(10, 12, 10, 10)
     )
 }
@@ -251,7 +247,7 @@ scale_fill_map_zch_cont <- function(...) {
 # 8. Estilos sugeridos para capas espaciales
 # -----------------------------
 estilo_poligono_base <- list(
-  fill = alpha(pal_zch["verde_territorial"], 0.65),
+  fill = scales::alpha(pal_zch["verde_territorial"], 0.65),
   color = pal_zch["azul_gris_tecnico"],
   linewidth = 0.30
 )
